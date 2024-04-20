@@ -8,10 +8,24 @@ body {
     background: linear-gradient(to bottom right, #f3d6e6, #d6a6c8); /* Fondo degradado */
 }
 
+
 .container {
     text-align: center;
     color: #4a4a4a; /* Color de texto principal */
 }
+
+.victory-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f3d6e6;
+    padding: 20px;
+    border-radius: 10px;
+    color: #4a4a4a;
+    z-index: 999; /* Asegura que el mensaje esté en la capa superior */
+  }
+  
 
 .board {
     display: flex;
@@ -43,7 +57,15 @@ body {
     display: none;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Espacio entre el contenedor de las cartas y el botón */
+  }
+
+  
 button {
+    visibility: visible;
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #e387c2; /* Color de fondo del botón */
