@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom right, #f3d6e6, #d6a6c8); /* Fondo degradado */
+}
+
+.container {
+    text-align: center;
+    color: #4a4a4a; /* Color de texto principal */
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f3d6e6; /* Color de fondo del tablero */
+    border-radius: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #d6a6c8; /* Color de fondo de las cartas */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.card.flipped {
+    background-color: #c9a0b8; /* Color de fondo de las cartas volteadas */
+}
+
+.card .emoji {
+    display: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e387c2; /* Color de fondo del botón */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c459a1; /* Color de fondo del botón al pasar el mouse */
+}
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .board {
+        padding: 10px; /* Reducimos el espacio alrededor del tablero en dispositivos móviles */
+        background-color: transparent; /* Eliminamos el color de fondo en dispositivos móviles */
+        border-radius: 0; /* Eliminamos los bordes redondeados en dispositivos móviles */
+    }
+
+    .card {
+        width: calc(33.33% - 10px); /* Ajustamos el ancho de las tarjetas para que se muestren en tres columnas */
+        height: 100px; /* Mantenemos la altura de las tarjetas */
+        font-size: 20px; /* Reducimos el tamaño de fuente */
+    }
+}
+
