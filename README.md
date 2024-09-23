@@ -1,5 +1,7 @@
 # GameCard
 
+
+https://alvinrhd.github.io/GameCard/
 El juego inica mostrandote en que posición están las cartas, previamente a esto las cartas se ocultan.
 ![Imagenes referentes al juego](img/1.png)
 
